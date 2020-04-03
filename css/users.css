@@ -11,6 +11,15 @@
     box-sizing: border-box;
 }
 
+
+p{
+    margin-bottom: 0px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: initial;
+}
 body {
     font-family: helveticaregular, serif;
 }
@@ -21,7 +30,7 @@ body {
 
 .left-menu {
     width: 255px;
-    padding: 20px 50px;
+    padding: 20px 25px 20px 50px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,7 +46,21 @@ body {
 .left-menu-logo {
     width: 100%;
 }
+.left-menu-items-wrapper{
+    height: 700px;
+    overflow-y: scroll;
+}
+.left-menu-items-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
 
+.left-menu-items-wrapper::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+.left-menu-items-wrapper::-webkit-scrollbar-thumb{
+    background-color: #d7d8df;
+    border-radius: 5px;
+}
 .left-menu-item {
     margin-bottom: 45px;
     flex-wrap: wrap;
@@ -99,7 +122,7 @@ body {
 
 }
 
-.main-header {
+.users-main-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -115,12 +138,12 @@ body {
 .path-item{
     color: #74798c;
 }
-.main-header-right {
+.users-main-header-right {
     display: flex;
     align-items: center;
 }
 
-.header-left-title {
+.users-header-left-title {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -178,7 +201,7 @@ body {
     content: '+';
     position: absolute;
     font-size: 30px;
-    top: 7px;
+    top: 0px;
     left: 23px;
 }
 
@@ -213,10 +236,15 @@ body {
     font-size: 18px;
     border: 1px solid #ececec;
 }
-.date-input{
-    width: 200px;
-    padding: 13px;
+.status-select{
+    height: auto!important;
+    vertical-align: baseline;
+
 }
+
+
+
+
 .user-search-buttons{
 align-self: flex-end;
 }
@@ -288,6 +316,46 @@ align-self: flex-end;
 .user-details-btn a{
     color: #ff0100;
     text-decoration: underline;
+}
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.first-last-btn{
+   width: 55px;
+    height: 35px;
+    border: 1px solid #bbbbbb;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+
+.pagination-btn{
+    border: 1px solid #bbbbbb;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #74798c;
+}
+
+.pagination-btn:hover{
+    background-color: #efefef;
+    border: 2px solid #bbbbbb;
+}
+
+.first-last-btn:hover{
+
+    background-color: #efefef;
+
 }
 
 

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/user-info.css">
     <title>Title</title>
 </head>
@@ -66,7 +69,91 @@
                         </a></li>
                     </ul>
                 </div>
-
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="left-menu-log-out-btn">
@@ -75,19 +162,19 @@
         </div>
     </div>
     <div class="users-main">
-        <div class="main-header">
-            <div class="main-header-left">
-                <p class="header-left-title">Users</p>
+        <div class="users-main-header">
+            <div class="users-main-header-left">
+                <p class="users-header-left-title">Users</p>
                 <div class="page-path">
                     <a href="" class="path-item">Submenu</a>
                     <a href="" class="path-item">Edit</a>
                 </div>
             </div>
-            <div class="main-header-right">
+            <div class="users-main-header-right">
                 <div class="user-avatar-wrapper">
                     <img src="img/avatar-user.png" alt="User" class="user-avatar">
                 </div>
-                <div class="user-details">
+                <div class="header-user-details">
                     <p class="user-name">Nazrin Aliyeva</p>
                     <p class="branch-name">Branch Name</p>
                 </div>
@@ -98,10 +185,10 @@
                 <div class="info-tab general-info-tab info-tab-active">
                     <p class="info-tab-txt">General Info</p>
                 </div>
-                <div class="info-tab general-info-tab">
+                <div class="info-tab user-info-tab">
                     <p class="info-tab-txt">User Info</p>
                 </div>
-                <div class="info-tab general-info-tab">
+                <div class="info-tab tab-3-info-tab">
                     <p class="info-tab-txt">Tab 3</p>
                 </div>
             </div>
@@ -117,21 +204,26 @@
                     </div>
                     <div class="personal-info-field">
                         <p class="info-field-title">Branch Name</p>
-                        <select name="branch-name" id="" class="info-field-input branch-name-input">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                            <option value="option4">Option 4</option>
-                            <option value="option5">Option 5</option>
+
+
+                        <select class="custom-select info-field-input branch-name-input">
+                            <option selected disabled>Please Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
                         </select>
+
+
                     </div>
                     <div class="personal-info-field">
                         <p class="info-field-title">Birthday</p>
-                        <input type="date" class="info-field-input birthday-input">
+                        <input type="text" name="birthday" value="01/01/2020" class="info-field-input birthday-input"/>
+
                     </div>
                     <div class="personal-info-field">
                         <p class="info-field-title">Registration Date</p>
-                        <input type="date" class="info-field-input register-date-input">
+                        <input type="text" name="birthday" value="01/01/2020" class="info-field-input register-date-input"/>
+
                     </div>
                     <div class="personal-info-field">
                         <p class="info-field-title">Full Name</p>
@@ -193,6 +285,7 @@
                             </label>
                         </div>
 
+
                     </div>
                     <div class="general-info-buttons">
                         <button class="clear-btn">Cancel</button>
@@ -200,10 +293,145 @@
                     </div>
                 </div>
             </div>
+            <div class="user-info-content">
+                <div class="user-info-items-wrapper">
+                    <div class="user-info-item">
+                        <p class="user-info-item-title">Full Name</p>
+                        <p class="user-info-item-data">Namiq Aghayev</p>
+                    </div>
+                    <div class="user-info-item">
+                        <p class="user-info-item-title">Father's Name</p>
+                        <p class="user-info-item-data">Ramiz</p>
+                    </div>
+                    <div class="user-info-item">
+                        <p class="user-info-item-title">Branch Name</p>
+                        <p class="user-info-item-data">HR Management</p>
+                    </div>
+                    <div class="user-info-item">
+                        <p class="user-info-item-title">Birthday</p>
+                        <p class="user-info-item-data">16.02.1995</p>
+                    </div>
+                    <div class="user-info-item">
+                        <p class="user-info-item-title">Register Date</p>
+                        <p class="user-info-item-data">23.04.2019</p>
+                    </div>
+                </div>
+                <div class="rights-wrapper">
+                    <p class="rights-title">Permissions</p>
+                    <div class="rights">
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">1</p>
+                            </div>
+                            <label for="user-list-2" class="right-checkbox-container">
+                                List Of Users
+                                <input type="checkbox" id="user-list-2" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">2</p>
+                            </div>
+                            <label for="user-add-2" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-add-2" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">3</p>
+                            </div>
+                            <label for="user-edit-2" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-edit-2" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">4</p>
+                            </div>
+                            <label for="user-info-2" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-info-2" class="right-checkbox">
+                                <span class="right-checkmark"></span>
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <div class="general-info-buttons general-info-buttons-2">
+                        <button class="clear-btn">Cancel</button>
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
+
+<div class="msg-wrapper success-msg-wrapper">
+    <div class="success-message message-popup">
+        <div class="popup-close-btn">
+            <span>+</span>
+        </div>
+        <img src="img/success.png" alt="" class="msg-img">
+        <p class="msg-title">
+            Well Done!
+        </p>
+        <p class="msg-details">Your changes have been saved succesfully. </p>
+        <button class="msg-btn">
+            OK
+        </button>
+    </div>
 </div>
+
+<div class="msg-wrapper error-msg-wrapper">
+    <div class="error-message message-popup">
+        <div class="popup-close-btn">
+            <span>+</span>
+        </div>
+        <img src="img/error.png" alt="" class="msg-img">
+        <p class="msg-title">
+            Oops!
+        </p>
+        <p class="msg-details">Something went wrong</p>
+        <button class="msg-btn error-btn">
+            Close
+        </button>
+    </div>
 </div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $('input[name="birthday"]').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minYear: 1901,
+            maxYear: parseInt(moment().format('YYYY'), 10)
+        }, function (start, end, label) {
+            let years = moment().diff(start, 'years');
+        });
+    });
+</script>
+<script src="js/user-info.js"></script>
 </body>
 </html>

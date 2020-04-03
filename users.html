@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/users.css">
     <title>Users</title>
 </head>
@@ -65,6 +69,57 @@
                   </a></li>
               </ul>
           </div>
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Products</p>
+              </a>
+              <ul class="submenu">
+                  <li class="submenu-item"><a href="">
+                      Submenu 1
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 2
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 3
+                  </a></li>
+              </ul>
+          </div>
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Products</p>
+              </a>
+              <ul class="submenu">
+                  <li class="submenu-item"><a href="">
+                      Submenu 1
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 2
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 3
+                  </a></li>
+              </ul>
+          </div>
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Products</p>
+              </a>
+              <ul class="submenu">
+                  <li class="submenu-item"><a href="">
+                      Submenu 1
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 2
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 3
+                  </a></li>
+              </ul>
+          </div>
 
       </div>
   </div>
@@ -74,15 +129,15 @@
         </div>
     </div>
     <div class="users-main">
-        <div class="main-header">
+        <div class="users-main-header">
             <div class="main-header-left">
-                <p class="header-left-title">Users</p>
+                <p class="users-header-left-title">Users</p>
                 <div class="page-path">
                     <a href="" class="path-item">Submenu</a>
                     <a href="" class="path-item">Edit</a>
                 </div>
             </div>
-            <div class="main-header-right">
+            <div class="users-main-header-right">
                 <div class="user-avatar-wrapper">
                     <img src="img/avatar-user.png" alt="User" class="user-avatar">
                 </div>
@@ -106,18 +161,16 @@
                     </div>
                     <div class="single-input-wrapper">
                         <p class="input-title">Status List</p>
-                        <select name="status" id="" class="input-field status-select">
-                            <option class="status-option" value="default">Please Select</option>
-                            <option class="status-option" value="option-1">option 1</option>
-                            <option class="status-option" value="option-2">option 2</option>
-                            <option class="status-option" value="option-3">option 3</option>
-                            <option class="status-option" value="option-4">option 4</option>
-
+                        <select class="custom-select input-field status-select">
+                            <option selected disabled>Please Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
                         </select>
                     </div>
                     <div class="single-input-wrapper">
                         <p class="input-title">Date</p>
-                        <input type="date" class="input-field date-input">
+                        <input type="text" name="birthday" value="01/01/2020" class="input-field "/>
                     </div>
                 </fieldset>
                 <div class="user-search-buttons">
@@ -289,9 +342,36 @@
                     </tr>
                 </table>
             </div>
+
         </div>
     </div>
 </div>
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $('input[name="birthday"]').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minYear: 1901,
+            maxYear: parseInt(moment().format('YYYY'), 10)
+        }, function (start, end, label) {
+            let years = moment().diff(start, 'years');
+        });
+    });
+</script>
+<script src="js/users.js"></script>
 </body>
 </html>
