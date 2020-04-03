@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/user-info.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="users-page-container">
+    <div class="left-menu">
+        <div class="left-menu-content">
+            <div class="left-menu-logo-wrapper">
+                <img src="img/logo.png" alt="" class="left-menu-logo">
+            </div>
+            <div class="left-menu-items-wrapper">
+
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/home-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Home</p>
+                    </a>
+                </div>
+
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/users-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title black-txt">Users</p>
+                    </a>
+                </div>
+
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/reports-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Reports</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="left-menu-item">
+                    <a href="">
+                        <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                        <p class="left-menu-item-title">Products</p>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="">
+                            Submenu 1
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 2
+                        </a></li>
+                        <li class="submenu-item"><a href="">
+                            Submenu 3
+                        </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="left-menu-log-out-btn">
+            <img src="img/logout.png" alt="" class="log-out-icon">
+            <a href="" class="logout-txt">Log out</a>
+        </div>
+    </div>
+    <div class="users-main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <p class="header-left-title">Users</p>
+                <div class="page-path">
+                    <a href="" class="path-item">Submenu</a>
+                    <a href="" class="path-item">Edit</a>
+                </div>
+            </div>
+            <div class="main-header-right">
+                <div class="user-avatar-wrapper">
+                    <img src="img/avatar-user.png" alt="User" class="user-avatar">
+                </div>
+                <div class="user-details">
+                    <p class="user-name">Nazrin Aliyeva</p>
+                    <p class="branch-name">Branch Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="info-tabs-wrapper">
+                <div class="info-tab general-info-tab info-tab-active">
+                    <p class="info-tab-txt">General Info</p>
+                </div>
+                <div class="info-tab general-info-tab">
+                    <p class="info-tab-txt">User Info</p>
+                </div>
+                <div class="info-tab general-info-tab">
+                    <p class="info-tab-txt">Tab 3</p>
+                </div>
+            </div>
+            <div class="general-info-content">
+                <div class="personal-info-fields-wrapper">
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Full Name</p>
+                        <input type="text" class="info-field-input full-name-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Father's Name</p>
+                        <input type="text" class="info-field-input father-name-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Branch Name</p>
+                        <select name="branch-name" id="" class="info-field-input branch-name-input">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                            <option value="option5">Option 5</option>
+                        </select>
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Birthday</p>
+                        <input type="date" class="info-field-input birthday-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Registration Date</p>
+                        <input type="date" class="info-field-input register-date-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Full Name</p>
+                        <input type="text" class="info-field-input full-name-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Full Name</p>
+                        <input type="text" class="info-field-input full-name-input">
+                    </div>
+                    <div class="personal-info-field">
+                        <p class="info-field-title">Full Name</p>
+                        <input type="text" class="info-field-input full-name-input">
+                    </div>
+                </div>
+                <div class="rights-wrapper">
+                    <p class="rights-title">Permissions</p>
+                    <div class="rights">
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">1</p>
+                            </div>
+                            <label for="user-list" class="right-checkbox-container">
+                                List Of Users
+                                <input type="checkbox" id="user-list" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">2</p>
+                            </div>
+                            <label for="user-add" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-add" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">3</p>
+                            </div>
+                            <label for="user-edit" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-edit" class="right-checkbox">
+                                <span class="right-checkmark "></span>
+                            </label>
+                        </div>
+
+                        <div class="single-right">
+                            <div class="right-id">
+                                <p class="right-id-txt">4</p>
+                            </div>
+                            <label for="user-info" class="right-checkbox-container">
+                                Add Users
+                                <input type="checkbox" id="user-info" class="right-checkbox">
+                                <span class="right-checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="general-info-buttons">
+                        <button class="clear-btn">Cancel</button>
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

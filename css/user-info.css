@@ -1,0 +1,174 @@
+@import "users.css";
+
+.info-tabs-wrapper {
+    width: 495px;
+    display: flex;
+    background-color: white;
+    text-align: center;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info-tab {
+    width: 33.33%;
+    padding: 15px;
+    color: #74798c;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info-tab-active {
+    color: #ff0100;
+    align-self: flex-end;
+    box-shadow: inset 0px -5px;
+}
+
+.general-info-content {
+    display: flex;
+}
+
+.personal-info-fields-wrapper {
+
+    width: 50%;
+}
+
+
+.personal-info-field {
+    margin-bottom: 20px;
+}
+
+.personal-info-field:last-child {
+    margin-bottom: 0px;
+}
+
+.info-field-input {
+    width: 495px;
+    padding: 12px 17px;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    font-size: 18px;
+
+}
+
+.birthday-input {
+    padding: 10px 17px;
+}
+
+.register-date-input {
+    padding: 10px 17px;
+}
+
+.info-field-title {
+    color: #74798c;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.rights {
+    background-color: #fff;
+
+    align-self: flex-start;
+    padding: 30px;
+}
+
+.single-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.single-right:nth-child(2n-1) {
+    background-color: #f9f9f9;
+}
+
+.right-id {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right-checkbox-container {
+    position: relative;
+    padding-left: 65px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 350px;
+    margin-left: 25px;
+    color: #20253a;
+}
+
+.right-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.right-checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+.right-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 8px;
+    top: -8px;
+    width: 9px;
+    height: 20px;
+    border: solid #ff0100;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+#user-list:checked + .right-checkmark:after {
+    display: block;
+}
+
+
+#user-add:checked + .right-checkmark:after {
+    display: block;
+}
+
+
+#user-edit:checked + .right-checkmark:after {
+    display: block;
+}
+
+
+#user-info:checked + .right-checkmark:after {
+    display: block;
+}
+
+.rights-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.general-info-buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+

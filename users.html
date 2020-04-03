@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/users.css">
+    <title>Users</title>
+</head>
+<body>
+<div class="users-page-container">
+    <div class="left-menu">
+  <div class="left-menu-content">
+      <div class="left-menu-logo-wrapper">
+          <img src="img/logo.png" alt="" class="left-menu-logo">
+      </div>
+      <div class="left-menu-items-wrapper">
+
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/home-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Home</p>
+              </a>
+          </div>
+
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/users-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title black-txt">Users</p>
+              </a>
+          </div>
+
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/reports-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Reports</p>
+              </a>
+              <ul class="submenu">
+                  <li class="submenu-item"><a href="">
+                      Submenu 1
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 2
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 3
+                  </a></li>
+              </ul>
+          </div>
+
+          <div class="left-menu-item">
+              <a href="">
+                  <img src="img/products-icon.png" alt="" class="left-menu-item-icon">
+                  <p class="left-menu-item-title">Products</p>
+              </a>
+              <ul class="submenu">
+                  <li class="submenu-item"><a href="">
+                      Submenu 1
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 2
+                  </a></li>
+                  <li class="submenu-item"><a href="">
+                      Submenu 3
+                  </a></li>
+              </ul>
+          </div>
+
+      </div>
+  </div>
+        <div class="left-menu-log-out-btn">
+            <img src="img/logout.png" alt="" class="log-out-icon">
+            <a href="" class="logout-txt">Log out</a>
+        </div>
+    </div>
+    <div class="users-main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <p class="header-left-title">Users</p>
+                <div class="page-path">
+                    <a href="" class="path-item">Submenu</a>
+                    <a href="" class="path-item">Edit</a>
+                </div>
+            </div>
+            <div class="main-header-right">
+                <div class="user-avatar-wrapper">
+                    <img src="img/avatar-user.png" alt="User" class="user-avatar">
+                </div>
+                <div class="user-details">
+                    <p class="user-name">Nazrin Aliyeva</p>
+                    <p class="branch-name">Branch Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <button class="add-user-btn">Add New User</button>
+            <form action="" class="user-search">
+                <fieldset class="search-inputs-wrapper">
+                    <div class="single-input-wrapper">
+                        <p class="input-title">Full Name</p>
+                        <input type="text" class="input-field">
+                    </div>
+                    <div class="single-input-wrapper">
+                        <p class="input-title">Father's Name</p>
+                        <input type="text" class="input-field">
+                    </div>
+                    <div class="single-input-wrapper">
+                        <p class="input-title">Status List</p>
+                        <select name="status" id="" class="input-field status-select">
+                            <option class="status-option" value="default">Please Select</option>
+                            <option class="status-option" value="option-1">option 1</option>
+                            <option class="status-option" value="option-2">option 2</option>
+                            <option class="status-option" value="option-3">option 3</option>
+                            <option class="status-option" value="option-4">option 4</option>
+
+                        </select>
+                    </div>
+                    <div class="single-input-wrapper">
+                        <p class="input-title">Date</p>
+                        <input type="date" class="input-field date-input">
+                    </div>
+                </fieldset>
+                <div class="user-search-buttons">
+                    <button class="clear-btn">Clear</button>
+                    <button class="search-btn">Search</button>
+                </div>
+            </form>
+            <div class="users-table-wrapper">
+                <table class="users-table">
+                    <tr class="header-row">
+                        <th class="column-header"></th>
+                        <th class="column-header">Full Name</th>
+                        <th class="column-header">Branch Name</th>
+                        <th class="column-header">Email</th>
+                        <th class="column-header">Date</th>
+                        <th class="column-header"></th>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                    <tr class="users-row">
+                        <td class="row-item row-id">1</td>
+                        <td class="row-item">Namiq Aghayev</td>
+                        <td class="row-item">Human Resource Management</td>
+                        <td class="row-item">namiq.aghayev@gmail.com</td>
+                        <td class="row-item">12.02.17</td>
+                        <td class="row-item user-details-btn"><a href="">Details</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
